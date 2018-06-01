@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Enfermedades</title>
+</head>
+<body>
+    <h1>Bienvenidos al Hospital Cenfotec</h1>
+    <form>
+        <label for="sltEnfermedades">Enfermedad</label>
+        <select id="sltEnfermedades">
+            <option value="">--Seleccione una enfermedad--</option>
+            <option value="1">Enfermedad tipo 1</option>
+            <option value="2">Enfermedad tipo 2</option>
+            <option value="3">Enfermedad tipo 3</option>
+            <option value="4">Enfermedad tipo 4</option>
+        </select>
+
+        <label for="txtEdad">Edad</label>
+        <input type="number" id="txtEdad" min="0" max="120">
+
+        <label for="txtCantDias">Cantidad de días</label>
+        <input type="number" id="txtCantDias" min="0">
+
+        <button type="button" id="btnCalcular">Calcular costo</button>
+        <hr>
+        <p>Muchas gracias por su estadía, el costo de su internamiento es de:</p>
+        <output id="txtCosto"></output>  
+    </form>
+
+    <script src="js/servicio.js"></script>
+    <script src="js/controlador.js"></script>
+</body>
+</html>
