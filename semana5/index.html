@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Validación</title>
+</head>
+<body>
+    <form>
+        <div>
+            <label for="txtNombre1">Primer nombre</label>
+            <input type="text" id="txtNombre1">
+        </div>
+        
+        <div>
+            <label for="txtNombre2">Segundo nombre</label>
+            <input type="text" id="txtNombre2">
+        </div>
+        
+        <div>
+            <label for="txtApellido1">Primer apellido</label>
+            <input type="text" id="txtApellido1">
+        </div>
+                
+        <div>
+            <label for="txtApellido2">Segundo apellido</label>
+            <input type="text" id="txtApellido2">
+        </div>
+        
+        <div>
+            <label for="txtFechaNacimiento">Fecha de nacimiento</label>
+            <input type="date" id="txtFechaNacimiento">
+        </div>
+        
+        <div>
+            <label for="txtEdad">Edad</label>
+            <input type="number" min="0" max="120" id="txtEdad">
+        </div>
+
+        <fieldset>
+            <legend>Sexo</legend>
+            <label for="rbtFemenino">Femenino</label>
+            <input type="radio" name="rbtSexo" id="rbtFemenino">
+
+            <label for="rbtMasculino">Masculino</label>
+            <input type="radio" name="rbtSexo" id="rbtMasculino">
+        </fieldset>
+
+        <div>
+            <label for="txtCorreo">Correo electrónico</label>
+            <input type="email" id="txtCorreo">
+        </div>
+
+        <div>
+            <label for="txtTelefono">Teléfono</label>
+            <input type="tel" id="txtTelefono">
+        </div>
+
+        <div>
+            <label for="txtContrasenna">Contraseña</label>
+            <input type="password" id="txtContrasenna">
+        </div>
+
+        <div>
+            <label for="txtConfirmacion">Confirmación</label>
+            <input type="password" id="txtConfirmacion">
+        </div>
+        <button type="button" id="btnRegistrar">Registrar</button>
+    </form>
+    
+    <script src="js/servicio.js"></script>
+    <script src="js/controlador.js"></script>
+</body>
+</html>
