@@ -17,8 +17,8 @@ function obtenerDatos(){
     //Ciclo incondicional
     for(let i = 0; i < nCantNumeros; i++){
         //cuerpo del ciclo
-       nNumero = Number(prompt('Ingrese el número'));
-       nSumatoria  = determinarSumatoria(nSumatoria , nNumero);
+        nNumero = Number(prompt('Ingrese el número'));
+        nSumatoria  = determinarSumatoria(nSumatoria , nNumero);
     }
     nPromedio = determinarPromedio(nSumatoria, nCantNumeros);
     outputPromedio.value = nPromedio;
