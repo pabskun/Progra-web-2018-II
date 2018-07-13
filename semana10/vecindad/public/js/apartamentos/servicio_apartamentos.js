@@ -1,5 +1,5 @@
 'use strict';
-const mApartameto = [
+const mApartamento = [
     [1, 'Apartamento rojo', 100, 2],
     [2, 'Apartamento verde', 120, 3],
     [3, 'Apartamento negro', 160, 3],
@@ -8,3 +8,11 @@ const mApartameto = [
     [6, 'Apartamento blanco', 107, 3],
     [7, 'Apartamento tornasol', 185, 4]
 ];
+
+function registrarApartamento(pNuevoApartamento){
+    mApartamento.push(pNuevoApartamento);
+};
+
+function obtenerListaApartamentos(){
+    return mApartamento;
+};
