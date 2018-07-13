@@ -20,6 +20,27 @@ const mVecinos = [
     ['Reflejo', 21, 'femenino', 7]
 ];
 
+function determinarGeneroPredominante(){
+    let sGeneroPred = '';
+    let nFem = 0;
+    let nMasc = 0;
+    let nTamanno = mVecinos.length;
+
+    for(let i = 0; i < nTamanno; i++){
+        if(mVecinos[i][2] == 'femenino'){
+            nFem++;
+        }else{
+            nMasc++;
+        }
+    };
+    if(nFem > nMasc){
+        sGeneroPred = 'femenino';
+    }else{
+        sGeneroPred = 'masculino';
+    }
+    
+    return sGeneroPred;
+}
 
     
 
