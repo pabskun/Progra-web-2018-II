@@ -16,3 +16,16 @@ function registrarApartamento(pNuevoApartamento){
 function obtenerListaApartamentos(){
     return mApartamento;
 };
+function obtenerCantidadInquilinos(pId){
+    let listaApartamentos = [];
+    let nCantInquilinos = 0;
+
+    listaApartamentos = obtenerListaApartamentos();
+
+    for(let i = 0; i < listaApartamentos.length; i++){
+        if(listaApartamentos[i][0] == pId){
+            nCantInquilinos = listaApartamentos[i][3];
+        }
+    }
+    return nCantInquilinos;
+}

@@ -40,7 +40,18 @@ function determinarGeneroPredominante(){
     }
     
     return sGeneroPred;
-}
+};
+function obtenerListaInquilinos(){
+    return mVecinos;
+};
+
+function agregarInquilino(pNuevoInquilino){
+    let listaInquilinos = [];
+
+    listaInquilinos= obtenerListaInquilinos();
+
+    listaInquilinos.push(pNuevoInquilino);
+};
 
     
 
