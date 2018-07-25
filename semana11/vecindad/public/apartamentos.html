@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Registrar apartamento</h1>
+    <form>
+        <div>
+            <label for="txtId">Id</label>
+            <input type="text" id="txtId">
+        </div>
+
+        <div>
+            <label for="txtNombre">Nombre</label>
+            <input type="text" id="txtNombre">
+        </div>
+
+        <div>
+            <label for="txtMetros">Tamaño en metros cuadrados</label>
+            <input type="number" id="txtMetros">
+        </div>
+        
+        <div>
+            <label for="txtCantInquilinos">Cantidad de inquilinos</label>
+            <input type="number" id="txtCantInquilinos">
+        </div>
+
+        <button type="button" id="btnRegistrar">Registrar apartamento</button>
+    </form>
+
+    <table id="tblApartamentos">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Apartamento</th>
+                <th>Tamaño</th>
+                <th>No. Inquilinos</th>
+                <th></th><!-- Se agrega este th vacío para introducir dinámicamente los enlaces -->
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+    <script src="js/vecinos/servicio_vecinos.js"></script> <!-- Se agrega el servicio de vecinos -->
+    
+    <script src="js/apartamentos/servicio_apartamentos.js"></script>
+    <script src="js/apartamentos/controlador_apartamentos.js"></script>
+</body>
+</html>
