@@ -30,7 +30,7 @@ const mostrarTablaUsuarios = () =>{
         let imagenUrl = mListaUsuarios[i][3];
         
         if(imagenUrl == ''){
-            imagenUrl = '../img/user_placeholder.png'
+            imagenUrl = 'img/user_placeholder.png';
         };
 
         imagen.src = imagenUrl;
@@ -39,6 +39,12 @@ const mostrarTablaUsuarios = () =>{
     };
 };
 
+const limpiarFormulario = () =>{
+    inputCedula.value = '';
+    inputNombre.value = '';
+    inputCorreo.value = '';
+    imagenFoto.src = 'img/user_placeholder.png';
+};
 const obtenerDatosRegistro = () =>{
     let aNuevoUsuario = [];
 
@@ -50,6 +56,7 @@ const obtenerDatosRegistro = () =>{
     aNuevoUsuario.push(sCedula, sNombre, sCorreo, sImagenUrl);
     registrarUsuario(aNuevoUsuario);
     mostrarTablaUsuarios();
+    limpiarFormulario();
 
 };
 
