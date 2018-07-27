@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <div class="img_container">
+            <img src="img/user_placeholder.png" alt="foto" width="80px" height="80px" id="imgFoto">
+        </div>
+        <div>
+            <label for="txtCedula">Cédula</label>
+            <input type="text" id="txtCedula">
+        </div>
+
+        <div>
+            <label for="txtNombre">Nombre completo</label>
+            <input type="text" id="txtNombre">
+        </div>
+
+        <div>
+            <label for="txtCorreo">Correo electrónico</label>
+            <input type="text" id="txtCorreo">
+        </div>
+
+        <div>
+            <button type="button" id="btnImagen">Agregar foto</button>
+        </div>
+
+        <div>
+            <button type="button" id="btnRegistrar">Registrar </button>
+        </div>
+
+        
+    </form>
+
+    <table id="tblUsuarios">
+        <thead>
+            <tr>
+                <th>Foto</th>
+                <th>Cédula</th>
+                <th>Usuario</th>
+                <th>Correo</th>
+            </tr>
+        </thead>    
+    </table>
+    <script src="js/servicio_usuarios.js"></script>
+    <script src="js/controlador_usuarios.js"></script>
+</body>
+
+</html>
