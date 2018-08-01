@@ -21,3 +21,26 @@ const registrarUsuario = (paNuevoUsuario) =>{
 
     localStorage.setItem('listaUsuariosLS', JSON.stringify(mListaUsuarios));
 }; 
+
+const buscarUsuarioPorCedula = (pCedula) =>{
+    let mListaUsuarios = obtenerListaUsuarios();
+    let usuarioEncontrado = [];
+    for(let i = 0; i < mListaUsuarios.length; i++ ){
+        if(mListaUsuarios[i][0] == pCedula){
+            usuarioEncontrado = mListaUsuarios[i];
+        }
+    };
+    return usuarioEncontrado;
+};
+
+// pUsuarioModificado -> arreglo
+const modificarUsuario = (pUsuarioModificado) =>{
+    let mListaUsuarios = obtenerListaUsuarios();
+    for(let i = 0 ; i < mListaUsuarios.length; i++ ){
+        if(mListaUsuarios[i][0] == pUsuarioModificado[0]){
+            mListaUsuarios[i] = pUsuarioModificado;
+        }
+    }
+    localStorage.setItem('listaUsuariosLS', JSON.stringify(mListaUsuarios));
+
+};
